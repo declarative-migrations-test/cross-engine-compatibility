@@ -1,0 +1,13 @@
+{
+  "bootstrap_date": "2026-08-04",
+  "description": "Portable-plan, catalog-signature, and cross-dialect refusal certification across PostgreSQL and CockroachDB.",
+  "organization": "declarative-migrations-test",
+  "production_dependency": {
+    "commit": "21eb846e356b2a5aff068b21e77903e6cca50452",
+    "path": "vendor/declarative-postgres-migrate.rs",
+    "repository": "declarative-migrations/declarative-postgres-migrate.rs",
+    "transport": "git-submodule"
+  },
+  "repository": "cross-engine-compatibility",
+  "schema_version": 1
+}
