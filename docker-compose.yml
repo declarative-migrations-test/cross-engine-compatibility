@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: ${POSTGRES_IMAGE:-postgres:16-alpine}
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: acceptance
+    ports:
+    - 5432:5432
+  cockroach:
+    image: ${COCKROACH_IMAGE:-cockroachdb/cockroach:v24.1.2}
+    command: start-single-node --insecure --store=type=mem,size=1GiB
+    ports:
+    - 26257:26257
+    - 8080:8080
